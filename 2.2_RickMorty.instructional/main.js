@@ -19,23 +19,13 @@
 
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
 
-const baseUrl = 'https://rickandmortyapi.com/api/character';
 
 
-
-function fetchImageOne(e) {
-
-    fetch(baseURL)
+async function getImage(){ 
+    await fetch('https://rickandmortyapi.com/api/character')
         .then(result => result.json())
-        .then(imageOne => {
-            console.log(imageOne);
-            displayImage(imageOne);
-         })
-  }
-//   function displayRockets(rockets) {
-//       rockets.forEach(r => {
-//           let rocket = document.createElement('li');
-//           rocket.innerText = r.name;
-//           spaceShips.appendChild(rocket);
-//       })
-//   }
+        .then(data => console.log(data))
+    
+}
+
+getImage();
