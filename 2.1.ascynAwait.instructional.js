@@ -7,11 +7,12 @@
 
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
 
-async function challengeTwo(){ 
+
+async function challenge2(){ 
     await fetch('https://swapi.dev/api/people/1/')
-        await then(res => res.json())
-        .then(json => console.log(json))
+        .then(result => result.json())
+        .then(data => console.log(data))
     console.log('this should print last')
 }
 
-challengeTwo();
+challenge2();
