@@ -15,4 +15,6 @@ async function challenge2(){
     console.log('this should print last')
 }
 
+
 challenge2();
+
