@@ -21,11 +21,41 @@
 
 
 
-async function getImage(){ 
+// function fetchSpace(e) {
+//     e.preventDefault();
+
+//    fetch(baseURL)
+//        .then(result => result.json())
+//        .then(json => {
+//            console.log(json);
+//            displayRockets(json);
+//         })
+//  }
+//  function displayRockets(rockets) {
+//      rockets.forEach(r => {
+//          let rocket = document.createElement('li');
+//          rocket.innerText = r.name;
+//          spaceShips.appendChild(rocket);
+//      })
+//  }
+
+
+async function getCharacters(){ 
     await fetch('https://rickandmortyapi.com/api/character')
         .then(result => result.json())
-        .then(data => console.log(data))
+        .then(charachters => console.log(charachters))
     
 }
 
-getImage();
+getCharacters();
+
+function displayPhoto(image) {
+        image.forEach(r => {
+            let image = document.createElement('li');
+            info.innerText = r.image;
+            toons.appendChild(image);
+            
+        });
+}
+
+
