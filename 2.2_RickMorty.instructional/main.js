@@ -21,41 +21,22 @@
 
 
 
-// function fetchSpace(e) {
-//     e.preventDefault();
+const baseUrl = 'https://rickandmortyapi.com/api/character'
+const image1 = document.getElementById('imageOne');
+const image2 = document.getElementById('imageTwo');
 
-//    fetch(baseURL)
-//        .then(result => result.json())
-//        .then(json => {
-//            console.log(json);
-//            displayRockets(json);
-//         })
-//  }
-//  function displayRockets(rockets) {
-//      rockets.forEach(r => {
-//          let rocket = document.createElement('li');
-//          rocket.innerText = r.name;
-//          spaceShips.appendChild(rocket);
-//      })
-//  }
-
-
-async function getCharacters(){ 
-    await fetch('https://rickandmortyapi.com/api/character')
-        .then(result => result.json())
-        .then(charachters => console.log(charachters))
     
-}
-
-getCharacters();
-
-function displayPhoto(image) {
-        image.forEach(r => {
-            let image = document.createElement('li');
-            info.innerText = r.image;
-            toons.appendChild(image);
-            
-        });
-}
-
-
+    
+    
+    
+     fetch(baseUrl)
+             .then(result => result.json())
+             .then(json => {
+                 console.log(json);
+                 getImage(json);
+             })
+        
+       function getImage(photo) {
+                   image1 = results.id[5].image;
+                   document.getElementById("imageOne").appendChild(img);
+               }

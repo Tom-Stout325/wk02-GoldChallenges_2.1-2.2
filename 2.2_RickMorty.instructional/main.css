@@ -1,1 +1,26 @@
 /* STYLE HERE */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(176, 233, 228,.5);
+}
+
+#imageOne {
+    width: 33%;
+    border: solid 2px blue;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: 33%;
+ }
+
+#imageTwo {
+    width: 33%;
+    border: solid 2px blue;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 33%;
+ } 
